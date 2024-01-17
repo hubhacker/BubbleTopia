@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cw5or7ld42p74"
+path="res://.godot/imported/8x5x6-fish.obj-e3fbabad1a523ef087340aae95c897a8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/8x5x6-fish.obj-e3fbabad1a523ef087340aae95c897a8.mesh"]
+
+source_file="res://game-assets-rapidpunches-FEB2021/voxels/8x5x6-fish.obj"
+dest_files=["res://.godot/imported/8x5x6-fish.obj-e3fbabad1a523ef087340aae95c897a8.mesh", "res://.godot/imported/8x5x6-fish.obj-e3fbabad1a523ef087340aae95c897a8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
