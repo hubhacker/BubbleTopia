@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://c7qbqutcjapki"]
+
+[ext_resource type="Texture2D" uid="uid://dg252jwuxu6fc" path="res://game-assets-rapidpunches-FEB2021/png-sprites/sheets/crab-claws.png" id="1_5dsyr"]
+[ext_resource type="Script" path="res://characterCrab.gd" id="2_dxlny"]
+
+[sub_resource type="Animation" id="Animation_vn1ik"]
+resource_name = "walk_right"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [1, 2, 3, 4, 5]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vg0yl"]
+_data = {
+"walk_right": SubResource("Animation_vn1ik")
+}
+
+[node name="characterCrab" type="Sprite2D"]
+texture_filter = 1
+texture = ExtResource("1_5dsyr")
+hframes = 6
+frame = 2
+script = ExtResource("2_dxlny")
+
+[node name="animationCrab" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_vg0yl")
+}
+speed_scale = 0.4
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(10, 10)
