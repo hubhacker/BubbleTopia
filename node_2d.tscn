@@ -20,7 +20,7 @@ texture = ExtResource("2_pa2xu")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 shape = SubResource("CapsuleShape2D_a3cc2")
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(583, 330.25)
-scale = Vector2(1.43704, 1.6284)
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 321.75)
+scale = Vector2(1.45432, 1.65556)
 texture = ExtResource("3_jx4q5")
