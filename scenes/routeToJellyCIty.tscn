@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://de4cuk8yj8mv"]
+[gd_scene load_steps=19 format=3 uid="uid://de4cuk8yj8mv"]
 
 [ext_resource type="Texture2D" uid="uid://mx5lyx3fu0in" path="res://game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-1.png" id="1_eaypg"]
 [ext_resource type="Texture2D" uid="uid://dk1ehbg3f8tld" path="res://game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-4.png" id="2_ggeuf"]
@@ -1667,6 +1667,9 @@ sources/12 = SubResource("TileSetAtlasSource_r8bjs")
 sources/14 = SubResource("TileSetAtlasSource_qih1h")
 pattern_0 = SubResource("TileMapPattern_cdy6u")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hdxoa"]
+size = Vector2(47.5, 44)
+
 [node name="RouteToJellyCIty" type="Node2D"]
 position = Vector2(144, 0)
 
@@ -1694,3 +1697,15 @@ layer_5/tile_data = PackedInt32Array(1638406, 262156, 16, 1703942, 262156, 17, 1
 
 [node name="scuba" parent="." instance=ExtResource("8_hq740")]
 z_index = 5
+position = Vector2(214, 614)
+
+[node name="Camera2D" type="Camera2D" parent="scuba"]
+zoom = Vector2(2, 2)
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
+
+[node name="Collisions" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collisions"]
+position = Vector2(192.25, 183)
+shape = SubResource("RectangleShape2D_hdxoa")
