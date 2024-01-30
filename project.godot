@@ -15,6 +15,7 @@ run/main_scene="res://label.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
+<<<<<<< Updated upstream
 [autoload]
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
@@ -41,6 +42,8 @@ animation_library={
 "gltf/naming_version": 0
 }
 
+=======
+>>>>>>> Stashed changes
 [input]
 
 ui_left={
