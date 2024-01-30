@@ -6,6 +6,15 @@ const friction = 600
 
 var input = Vector2.ZERO
 
+func _input(event: InputEvent):
+	# check if a dialog is already running
+	if Dialogic.current_timeline != null:
+		return
+
+	if event is InputEventKey and event.keycode == KEY_ENTER and event.pressed:
+		Dialogic.start('chapterA')
+		get_viewport().set_input_as_handled()
+
 func _physics_process(delta):
 	player_movement(delta)
 	
@@ -13,6 +22,7 @@ func get_input():
 	input.x = int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
 	input.y = int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up"))
 	return input.normalized()
+	
 	
 func player_movement(delta):
 	input = get_input()
@@ -27,3 +37,4 @@ func player_movement(delta):
 		velocity = velocity.limit_length(max_speed)
 		
 	move_and_slide()
+	

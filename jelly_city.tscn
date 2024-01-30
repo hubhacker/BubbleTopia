@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=4 format=3 uid="uid://bbiog5sq5pyts"]
+=======
+[gd_scene load_steps=4 format=3 uid="uid://c46lvnxop730n"]
+>>>>>>> badc9d709688dfd9bc5fae4a19bd7a6927be58e9
 
 [ext_resource type="Texture2D" uid="uid://3fcstjtgwppp" path="res://assets/new_undersea_tiles__by_kyle_dove_d4ytzaj.png" id="1_l0ckx"]
 
