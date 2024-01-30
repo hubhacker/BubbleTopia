@@ -26,5 +26,8 @@ func add_text(next_text):
 	#len(next_text) * CHAR_READ_RATE
 	#tween.tween_property(label, "display_text", 0.0,1.0, len(next_text) * CHAR_READ_RATE,Tween.TRANS_LINEAR,Tween.EASE_OUT)
 	tween.tween_property(label, "visible_ratio", 1.0, len(next_text)*CHAR_READ_RATE)
-	tween.connect("finished", Tween.on_tween_finished)
+	#tween.connect("finished", tween_completed)
 	tween.play()
+	
+#func _on_Tween_tween_completed():
+	
