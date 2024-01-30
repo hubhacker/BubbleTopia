@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://clcuni3rrnxa4"]
+
+[ext_resource type="Script" path="res://npc.gd" id="1_42qha"]
+[ext_resource type="Texture2D" uid="uid://bgmo7kwvbgota" path="res://Sprite/pixil-frame-0 (1).png" id="2_vuvgu"]
+[ext_resource type="Texture2D" uid="uid://cadp5mi0ibuhs" path="res://Sprite/pixil-frame-0.png" id="3_bdg18"]
+[ext_resource type="Texture2D" uid="uid://bj1dt25ssyrcx" path="res://Sprite/pixil-frame-0 (2).png" id="4_aueoo"]
+[ext_resource type="Texture2D" uid="uid://dow0jhlpf1xsd" path="res://Sprite/pixil-frame-0 (3).png" id="5_jsq6b"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nflon"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yhqmk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_vuvgu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_bdg18")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_vuvgu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jsq6b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_aueoo")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 9.0
+}]
+
+[node name="npc" type="CharacterBody2D"]
+scale = Vector2(-0.490883, 0.480608)
+up_direction = Vector2(0.99992, -0.0126572)
+script = ExtResource("1_42qha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(10.5315, -20.9123)
+shape = SubResource("CircleShape2D_nflon")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(3.36993, 3.42431)
+sprite_frames = SubResource("SpriteFrames_yhqmk")
+animation = &"walk"
+frame_progress = 0.800243
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfcnfoprxrhok"]
+
+[ext_resource type="Script" path="res://scuba.gd" id="1_m0ehw"]
+[ext_resource type="Texture2D" uid="uid://fxc63krwvgvi" path="res://Sprite/scuba.png" id="2_g5opi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7dorq"]
+size = Vector2(26, 33)
+
+[node name="scuba" type="CharacterBody2D"]
+position = Vector2(238, 233)
+script = ExtResource("1_m0ehw")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, -0.999996)
+scale = Vector2(0.103175, 0.103774)
+texture = ExtResource("2_g5opi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -1.5)
+shape = SubResource("RectangleShape2D_7dorq")

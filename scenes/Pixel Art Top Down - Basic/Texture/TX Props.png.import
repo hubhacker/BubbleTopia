@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fxc63krwvgvi"
-path="res://.godot/imported/scuba.png-12e5b14d3f122c5bc287c1d1a4f1a919.ctex"
+uid="uid://dixh32ojl5vk2"
+path="res://.godot/imported/TX Props.png-a127b44785f66d72adb9ed2a68a45d29.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprite/scuba.png"
-dest_files=["res://.godot/imported/scuba.png-12e5b14d3f122c5bc287c1d1a4f1a919.ctex"]
+source_file="res://scenes/Pixel Art Top Down - Basic/Texture/TX Props.png"
+dest_files=["res://.godot/imported/TX Props.png-a127b44785f66d72adb9ed2a68a45d29.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmfcgc41mn0sf"
-path="res://.godot/imported/TX Shadow.png-0a125b316fb4080379dd6398408cecb5.ctex"
+uid="uid://baqgrotv4mbwa"
+path="res://.godot/imported/jellyfish1e.png-e6c2f809708e5e27f4a0592147bfe698.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pixel Art Top Down - Basic/Texture/TX Shadow.png"
-dest_files=["res://.godot/imported/TX Shadow.png-0a125b316fb4080379dd6398408cecb5.ctex"]
+source_file="res://Sprite/jellyfish1e.png"
+dest_files=["res://.godot/imported/jellyfish1e.png-e6c2f809708e5e27f4a0592147bfe698.ctex"]
 
 [params]
 

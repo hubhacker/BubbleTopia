@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7jlwdn1qqfjl"
-path="res://.godot/imported/TX Tileset Grass.png-2b4d4825f7ac3e64bc84b45d2d3e292e.ctex"
+uid="uid://cwq47w0288rsh"
+path="res://.godot/imported/jellyfish3.png-5d15b40d83a9a59e9c925bea5762581d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pixel Art Top Down - Basic/Texture/TX Tileset Grass.png"
-dest_files=["res://.godot/imported/TX Tileset Grass.png-2b4d4825f7ac3e64bc84b45d2d3e292e.ctex"]
+source_file="res://Sprite/jellyfish3.png"
+dest_files=["res://.godot/imported/jellyfish3.png-5d15b40d83a9a59e9c925bea5762581d.ctex"]
 
 [params]
 

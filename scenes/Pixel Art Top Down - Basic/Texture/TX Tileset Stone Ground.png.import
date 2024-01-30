@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://whxxvc644duu"
-path="res://.godot/imported/TX Tileset Stone Ground.png-2913f5af6fa6848a6ac01c419b9ffd85.ctex"
+path="res://.godot/imported/TX Tileset Stone Ground.png-8862911dc8cf08c435e7a46132255168.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pixel Art Top Down - Basic/Texture/TX Tileset Stone Ground.png"
-dest_files=["res://.godot/imported/TX Tileset Stone Ground.png-2913f5af6fa6848a6ac01c419b9ffd85.ctex"]
+source_file="res://scenes/Pixel Art Top Down - Basic/Texture/TX Tileset Stone Ground.png"
+dest_files=["res://.godot/imported/TX Tileset Stone Ground.png-8862911dc8cf08c435e7a46132255168.ctex"]
 
 [params]
 
