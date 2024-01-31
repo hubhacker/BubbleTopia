@@ -74,7 +74,7 @@ position = Vector2(605.871, 353.985)
 scale = Vector2(1.65871, 1.59082)
 sprite_frames = SubResource("SpriteFrames_1apcn")
 animation = &"idle"
-frame_progress = 0.278143
+frame_progress = 0.551546
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(961, 521)
@@ -94,7 +94,7 @@ position = Vector2(1537, 565)
 scale = Vector2(-1.41354, 1.3227)
 sprite_frames = SubResource("SpriteFrames_5kvd0")
 animation = &"idle"
-frame_progress = 0.944634
+frame_progress = 0.155206
 speed_scale = 1.5
 
 [node name="Timer" type="Timer" parent="CharacterBody2D2"]

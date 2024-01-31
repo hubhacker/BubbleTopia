@@ -1,6 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://cbrcsso2jrwrq"]
+[gd_scene load_steps=17 format=3 uid="uid://cbrcsso2jrwrq"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_7kh7x"]
+[ext_resource type="Script" path="res://main.gd" id="1_qcypl"]
 [ext_resource type="Texture2D" uid="uid://cchwhq3xhcyrd" path="res://Sprite/scuba3.png" id="2_xdr55"]
 [ext_resource type="Texture2D" uid="uid://bg2ttpmblbrus" path="res://Sprite/scuba2.png" id="3_4m6vw"]
 [ext_resource type="Texture2D" uid="uid://dwjxcib7udbl5" path="res://Sprite/bgnew.png" id="3_8u4pa"]
@@ -60,6 +61,7 @@ animations = [{
 }]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_qcypl")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 scale = Vector2(0.914814, 0.912162)
@@ -74,7 +76,7 @@ position = Vector2(605.871, 353.985)
 scale = Vector2(1.65871, 1.59082)
 sprite_frames = SubResource("SpriteFrames_1apcn")
 animation = &"idle"
-frame_progress = 0.278143
+frame_progress = 0.50047
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(961, 521)
@@ -94,7 +96,7 @@ position = Vector2(1537, 565)
 scale = Vector2(-1.41354, 1.3227)
 sprite_frames = SubResource("SpriteFrames_5kvd0")
 animation = &"idle"
-frame_progress = 0.944634
+frame_progress = 0.0786222
 speed_scale = 1.5
 
 [node name="Timer" type="Timer" parent="CharacterBody2D2"]

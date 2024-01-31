@@ -1,0 +1,13 @@
+~ scene1
+
+???: HELP! HELLLP!!!
+- (Ignore) => END
+- Are you ok!?
+	???: No!!! I was just swimming, until I got stuck in this huge net!
+	True or False? : You are more likely to get bitten by a shark than struck by lightning.
+	- True => END
+	- False
+	=> END 
+Cici: bye
+
+=> END
