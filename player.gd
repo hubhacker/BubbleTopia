@@ -8,20 +8,9 @@ const friction = 600
 
 var input = Vector2.ZERO
 
-<<<<<<< HEAD
 func _ready():
 	anim.play("idle")
 
-=======
-#func _input(event: InputEvent):
-	## check if a dialog is already running
-	#if Dialogic.current_timeline != null:
-		#return
-#
-	#if event is InputEventKey and event.keycode == KEY_ENTER and event.pressed:
-		#Dialogic.start('chapterA')
-		#get_viewport().set_input_as_handled()
->>>>>>> 279f0c7f28d7b2c1401183ee9e083d53e2d3efea
 
 func _physics_process(delta):
 	player_movement(delta)
@@ -45,4 +34,5 @@ func player_movement(delta):
 		velocity = velocity.limit_length(max_speed)
 		
 	move_and_slide()
+	
 	
