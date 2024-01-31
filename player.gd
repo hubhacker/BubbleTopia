@@ -1,10 +1,15 @@
 extends CharacterBody2D
 
+@onready var anim = $AnimatedSprite2D
+
 const max_speed = 400
 const accel = 1500
 const friction = 600
 
 var input = Vector2.ZERO
+
+func _ready():
+	anim.play("idle")
 
 #func _input(event: InputEvent):
 	## check if a dialog is already running
