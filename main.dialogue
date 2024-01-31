@@ -10,7 +10,7 @@ Scuba: Next stop is Jelly City
 - (Ignore) => END
 - Are you ok!?
 	???: No!!! I was just swimming, until I got stuck in this huge net!
-	True or False? : You are more likely to get bitten by a shark than struck by lightning.
+	True or False? : You are more likely to get bitten by ax shark than struck by lightning.
 	- True => END
 	- False
 	???: Hooray!! Thank you so much for saving me, [wait=0.5]brave hero! [wait=0.5]What's your name?
