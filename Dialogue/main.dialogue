@@ -1,0 +1,17 @@
+~ scene1
+
+???: HELP! [wait=0.4]HELLLP!!! [wait=0.5][speed=0.5]HEEEEEEEEEEEEELLLLLLLLLLLPPPP!
+- (Ignore) => END
+- Are you ok!?
+	???: No!!! I was just swimming, until I got stuck in this huge net!
+	True or False? : You are more likely to get bitten by a shark than struck by lightning.
+	- True => END
+	- False
+		???: Thank you so much for saving me, [wait-0.4]brave hero! What's your name?
+		- Shut up => END
+		- Scuba, what's yours?
+			Cici: My name is Cici, nice to meet you!!
+	=> END 
+Cici: bye
+
+=> END
