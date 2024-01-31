@@ -1,5 +1,14 @@
 ~ scene1
+Scuba: Wow! The ocean is so beautiful.
+Scuba: Ok! Enough exploring, I have to get on with finding the treasure!
+Scuba: Next stop is Jelly City
 
+=> END
+
+~ scene2
+=> END
+
+~ scene3
 ???: HELP! [wait=0.3] HELLLP!!![wait=0.6][speed=0.4] HEEEEEEEEEEEEEEEELLLLLPPPP!!!!
 - (Ignore) => END
 - Are you ok!?
@@ -10,8 +19,8 @@
 	???: Hooray!! Thank you so much for saving me, [wait=0.5]brave hero! [wait=0.5]What's your name?
 	- Shut up. => END
 	- Scuba! What's yours?
-		Cici: My name is Cici!
+		Nova: My name is Nova!
 	=> END 
-Cici: bye
+Nova: bye
 
 => END
