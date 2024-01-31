@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://clcuni3rrnxa4"]
+[gd_scene load_steps=8 format=3 uid="uid://bldxclsi78bix"]
 
 [ext_resource type="Script" path="res://npc.gd" id="1_42qha"]
 [ext_resource type="Texture2D" uid="uid://bgmo7kwvbgota" path="res://Sprite/pixil-frame-0 (1).png" id="2_vuvgu"]
