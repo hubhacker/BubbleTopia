@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 [gd_scene load_steps=20 format=3 uid="uid://b86ly27pnbavq"]
-=======
-[gd_scene load_steps=19 format=3 uid="uid://de4cuk8yj8mv"]
->>>>>>> fc0216610f31733d61a8da55629aece2dcd9dc82
 
 [ext_resource type="Texture2D" uid="uid://mx5lyx3fu0in" path="res://game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-1.png" id="1_eaypg"]
 [ext_resource type="Texture2D" uid="uid://dk1ehbg3f8tld" path="res://game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-4.png" id="2_ggeuf"]

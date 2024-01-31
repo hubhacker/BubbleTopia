@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bfcnfoprxrhok"]
 
 [ext_resource type="Script" path="res://scuba.gd" id="1_m0ehw"]
-[ext_resource type="Texture2D" uid="uid://fxc63krwvgvi" path="res://Sprite/scuba.png" id="2_g5opi"]
+[ext_resource type="Texture2D" uid="uid://oqwisj3dlbla" path="res://scuba.png" id="2_g5opi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7dorq"]
 size = Vector2(26, 33)
