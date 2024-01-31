@@ -15,10 +15,6 @@ run/main_scene="res://label.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
-[autoload]
-
-DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
-
 [dialogic]
 
 directories/dch_directory={
@@ -34,10 +30,6 @@ variables={}
 [dialogue_manager]
 
 general/wrap_lines=true
-
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [importer_defaults]
 

@@ -1,6 +1,10 @@
 extends CharacterBody2D
 
 @onready var anim = $AnimatedSprite2D
+@export var follow_speed = 300;
+@export var follow_distance = 50;
+@export var follow_stop_distance = 70;
+
 
 func _ready():
 	randomize()

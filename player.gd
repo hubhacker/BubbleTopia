@@ -1,6 +1,9 @@
 extends CharacterBody2D
 
 @onready var anim = $AnimatedSprite2D
+@export var follow_speed = 300;
+@export var follow_distance = 50;
+@export var follow_stop_distance = 70;
 
 const max_speed = 400
 const accel = 1500
