@@ -7,10 +7,10 @@
 	True or False? : You are more likely to get bitten by a shark than struck by lightning.
 	- True => END
 	- False
-		???: Thank you so much for saving me, [wait-0.4]brave hero! What's your name?
-		- Shut up => END
-		- Scuba, what's yours?
-			Cici: My name is Cici, nice to meet you!!
+	???: Thank you so much for saving me, [wait-0.4]brave hero! What's your name?
+	- Shut up => END
+	- Scuba, what's yours?
+		Cici: My name is Cici, nice to meet you!!
 	=> END 
 Cici: bye
 
