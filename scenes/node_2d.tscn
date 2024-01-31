@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-[gd_scene load_steps=16 format=3 uid="uid://cbrcsso2jrwrq"]
+[gd_scene load_steps=16 format=3 uid="uid://cm0jdel4a4ofv"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_7kh7x"]
 [ext_resource type="Texture2D" uid="uid://cchwhq3xhcyrd" path="res://Sprite/scuba3.png" id="2_xdr55"]
@@ -60,31 +59,13 @@ animations = [{
 "speed": 5.0
 }]
 
-=======
-[gd_scene load_steps=5 format=3 uid="uid://cbrcsso2jrwrq"]
-
-[ext_resource type="Script" path="res://player.gd" id="1_7kh7x"]
-[ext_resource type="Texture2D" path="res://Sprite/scuba.png" id="2_pa2xu"]
-[ext_resource type="Texture2D" uid="uid://bmn0vn7ho8fe3" path="res://Sprite/bg.jpg" id="3_jx4q5"]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a3cc2"]
-
->>>>>>> 279f0c7f28d7b2c1401183ee9e083d53e2d3efea
 [node name="Node2D" type="Node2D"]
 position = Vector2(0, 2)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+scale = Vector2(0.914814, 0.912162)
 script = ExtResource("1_7kh7x")
 
-<<<<<<< HEAD
-=======
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-z_index = 3
-position = Vector2(264.75, 163.75)
-scale = Vector2(0.331502, 0.307132)
-texture = ExtResource("2_pa2xu")
-
->>>>>>> 279f0c7f28d7b2c1401183ee9e083d53e2d3efea
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 shape = SubResource("CapsuleShape2D_a3cc2")
 
@@ -97,7 +78,6 @@ animation = &"idle"
 frame_progress = 0.686233
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-<<<<<<< HEAD
 position = Vector2(961, 521)
 scale = Vector2(1.67, 0.961)
 texture = ExtResource("3_8u4pa")
@@ -126,8 +106,3 @@ z_index = 7
 position = Vector2(986, 507.5)
 scale = Vector2(2.016, 1.069)
 texture = ExtResource("9_r3la1")
-=======
-position = Vector2(569, 322)
-scale = Vector2(1.45432, 1.65556)
-texture = ExtResource("3_jx4q5")
->>>>>>> 279f0c7f28d7b2c1401183ee9e083d53e2d3efea
