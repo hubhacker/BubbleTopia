@@ -70,7 +70,6 @@ var while_loopbacks: Array[String] = []
 
 
 ## Parse some raw dialogue text. Returns a dictionary containing parse results
-
 static func parse_string(string: String, path: String) -> DialogueManagerParseResult:
 	var parser: DialogueManagerParser = DialogueManagerParser.new()
 	var error: Error = parser.parse(string, path)
@@ -1730,3 +1729,11 @@ func find_match(input: String) -> Dictionary:
 			}
 
 	return {}
+	
+
+func to_float(input_str: String) -> float:
+	var result = 0.0
+	result = float(input_str)
+	
+	return 0.0  # You can modify this to return a default value or handle it differently
+	return result
