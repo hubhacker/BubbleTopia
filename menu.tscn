@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://ctswla324rucq"]
+[gd_scene load_steps=7 format=3 uid="uid://ctswla324rucq"]
 
 [ext_resource type="Script" path="res://Menu.gd" id="1_4ni2t"]
 [ext_resource type="Texture2D" uid="uid://tqugjp7hqnga" path="res://assets/beachPixel.jpg" id="2_ii78t"]
 [ext_resource type="Script" path="res://BeachPixel.gd" id="3_xu3x7"]
+[ext_resource type="Texture2D" uid="uid://bck7n3p8gorrd" path="res://Sprite/scuba1.png" id="4_cljyy"]
 
 [sub_resource type="SystemFont" id="SystemFont_jb2rm"]
 font_names = PackedStringArray("Cursive")
@@ -25,8 +26,8 @@ script = ExtResource("1_4ni2t")
 
 [node name="BeachPixel" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 1.00002
-offset_right = 451.0
+offset_left = 1.0
+offset_right = 482.0
 offset_bottom = 338.0
 scale = Vector2(2.39556, 1.93787)
 texture = ExtResource("2_ii78t")
@@ -34,10 +35,10 @@ script = ExtResource("3_xu3x7")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
-offset_left = 231.0
-offset_top = 1.0
-offset_right = 840.0
-offset_bottom = 198.0
+offset_left = 282.0
+offset_top = 18.0
+offset_right = 891.0
+offset_bottom = 215.0
 theme_override_constants/margin_left = 12
 theme_override_constants/margin_top = 12
 theme_override_constants/margin_right = 12
@@ -46,6 +47,7 @@ theme_override_constants/margin_bottom = 12
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 theme_override_constants/separation = 60
+alignment = 1
 
 [node name="Separator" type="Control" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -75,7 +77,6 @@ alignment = 1
 layout_mode = 2
 
 [node name="Play" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
-custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
 theme_override_fonts/font = SubResource("SystemFont_agxlo")
 theme_override_font_sizes/font_size = 24
@@ -90,3 +91,7 @@ layout_mode = 2
 theme_override_fonts/font = SubResource("SystemFont_agxlo")
 theme_override_font_sizes/font_size = 24
 text = "QUIT"
+
+[node name="Scuba1" type="Sprite2D" parent="."]
+position = Vector2(608, 500)
+texture = ExtResource("4_cljyy")
