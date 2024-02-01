@@ -1738,5 +1738,5 @@ func to_float(input_str: String) -> float:
 	return 0.0  # You can modify this to return a default value or handle it differently
 	return result
 
-func to_float(input_int: int) -> float:
-	return float(input_int)
+#func to_float(input_int: int) -> float:
+	#return float(input_int)
