@@ -1,5 +1,6 @@
 extends Node
 
+const Parser = preload("res://addons/dialogue_manager/components/parser.gd")
 
 const DialogueConstants = preload("./constants.gd")
 const DialogueSettings = preload("./settings.gd")
