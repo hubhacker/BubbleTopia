@@ -10,14 +10,18 @@ Scuba: Next stop is Jelly City
 - (Ignore) => END
 - Are you ok!?
 	???: No!!! I was just swimming, until I got stuck in this huge net!
+<<<<<<< HEAD
+	QUIZ TIME: TRUE OR FALSE? You are more likely to get bitten by a shark than struck by lightning.
+=======
 	True or False? : You are more likely to get bitten by ax shark than struck by lightning.
+>>>>>>> cecd4862da201f9af5c0ae6c91a88cf1080fe368
 	- True => END
 	- False
-	???: Hooray!! Thank you so much for saving me, [wait=0.5]brave hero! [wait=0.5]What's your name?
-	- Shut up. => END
-	- Scuba! What's yours?
-		Nova: My name is Nova!
-	=> END 
+???: Hooray!! Thank you so much for saving me, [wait=0.5]brave hero! [wait=0.5]What's your name?
+- Shut up. => END
+- Scuba! What's yours?
+Nova: My name is Nova!
+=> END 
 Nova: bye
 
 => END
