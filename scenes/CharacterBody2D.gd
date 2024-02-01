@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @onready var anim = $AnimatedSprite2D
 @onready var actionable_finder: Area2D = $Direction/ActionableFinder
+
 func _ready():
 	anim.play("default")
 	

@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://bc8mdr36kcorc"]
+[gd_scene load_steps=34 format=3 uid="uid://bc8mdr36kcorc"]
 
 [ext_resource type="Texture2D" uid="uid://mx5lyx3fu0in" path="res://game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-1.png" id="1_eaypg"]
 [ext_resource type="Texture2D" uid="uid://dk1ehbg3f8tld" path="res://game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-4.png" id="2_ggeuf"]
@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://cwq47w0288rsh" path="res://Sprite/jellyfish3.png" id="13_db4qt"]
 [ext_resource type="Texture2D" uid="uid://vc48pg7ntpak" path="res://Sprite/jellyfish2.png" id="14_7oiff"]
 [ext_resource type="PackedScene" uid="uid://bm0u6ce3b3x4i" path="res://addons/actionable.tscn" id="17_osiif"]
+[ext_resource type="PackedScene" uid="uid://c7qbqutcjapki" path="res://character_crab.tscn" id="18_jsen1"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_cdy6u"]
 tile_data = PackedInt32Array(0, 2097166, 4, 65536, 2097166, 5, 131072, 2097166, 6, 196608, 2097166, 4, 262144, 2097166, 5, 327680, 2097166, 6, 1, 2097166, 4, 65537, 2097166, 5, 131073, 2097166, 6, 196609, 2031630, 4, 262145, 2031630, 5, 327681, 2031630, 6, 2, 2031630, 4, 65538, 2031630, 5, 131074, 2031630, 6, 196610, 2097166, 4, 262146, 2097166, 5, 327682, 2097166, 6, 3, 2097166, 4, 65539, 2097166, 5, 131075, 2097166, 6, 196611, 2031630, 4, 262147, 2031630, 5, 327683, 2031630, 6)
@@ -1813,3 +1814,12 @@ autostart = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="jelly/Actionable"]
 position = Vector2(256, 149)
 shape = SubResource("CircleShape2D_167x2")
+
+[node name="characterCrab" parent="." instance=ExtResource("18_jsen1")]
+position = Vector2(119, 482)
+scale = Vector2(1.21875, 1)
+
+[node name="characterCrab" parent="characterCrab" instance=ExtResource("18_jsen1")]
+position = Vector2(296.205, -115)
+rotation = 2.68251
+scale = Vector2(0.973915, 1.00542)
