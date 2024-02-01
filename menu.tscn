@@ -1,12 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://ctswla324rucq"]
+[gd_scene load_steps=3 format=3 uid="uid://ctswla324rucq"]
 
 [ext_resource type="Script" path="res://Menu.gd" id="1_4ni2t"]
+[ext_resource type="Texture2D" uid="uid://tqugjp7hqnga" path="res://assets/beachPixel.jpg" id="2_ii78t"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 31.0
+offset_bottom = 6.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_4ni2t")
@@ -30,6 +35,11 @@ text = "Options"
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Quit"
+
+[node name="BeachPixel" type="Sprite2D" parent="."]
+position = Vector2(614, 323.5)
+scale = Vector2(2.39556, 1.93787)
+texture = ExtResource("2_ii78t")
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
