@@ -7,7 +7,7 @@
 	True or False? : You are more likely to get bitten by a shark than struck by lightning.
 	- True => END
 	- False => another_node
-	=> END 
+	=> END  
 
 ~ another_node
 
