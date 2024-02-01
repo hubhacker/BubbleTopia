@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @onready var anim = $AnimatedSprite2D
-
+@onready var actionable_finder: Area2D = $Direction/ActionableFinder
 func _ready():
 	anim.play("default")
 	
@@ -12,8 +12,10 @@ func handleInput():
 	velocity = moveDirection*speed
 	
 	if Input.is_action_just_pressed("ui_accept"):
-		DialogueManager.show_example_dialogue_balloon(load("res://Dialogue/main.dialogue"), "scene1")
-		return
+		var actionables = actionable_finder.get_overlapping_areas()
+		if actionables.size() > 0:
+			actionables[0].action()
+			return
 
 func _physics_process(delta):
 	handleInput()

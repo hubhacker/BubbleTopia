@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cm0jdel4a4ofv"]
+[gd_scene load_steps=16 format=3 uid="uid://cd1d8ykvwr3qv"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_7kh7x"]
 [ext_resource type="Texture2D" uid="uid://cchwhq3xhcyrd" path="res://Sprite/scuba3.png" id="2_xdr55"]
@@ -7,9 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://bck7n3p8gorrd" path="res://Sprite/scuba1.png" id="4_wgrvd"]
 [ext_resource type="Script" path="res://cici.gd" id="4_wi5o2"]
 [ext_resource type="Texture2D" uid="uid://5uyvdkvis3fn" path="res://Sprite/jellyfish1.png" id="5_33j8h"]
-[ext_resource type="Texture2D" path="res://Sprite/jellyfish1e.png" id="5_wa80x"]
-[ext_resource type="Texture2D" path="res://Sprite/jellyfish3.png" id="6_bst7y"]
-[ext_resource type="Texture2D" path="res://Sprite/jellyfish2.png" id="6_y4mqk"]
+[ext_resource type="Texture2D" uid="uid://baqgrotv4mbwa" path="res://Sprite/jellyfish1e.png" id="5_wa80x"]
+[ext_resource type="Texture2D" uid="uid://cwq47w0288rsh" path="res://Sprite/jellyfish3.png" id="6_bst7y"]
+[ext_resource type="Texture2D" uid="uid://vc48pg7ntpak" path="res://Sprite/jellyfish2.png" id="6_y4mqk"]
 [ext_resource type="Texture2D" uid="uid://8k0qcvbwaw8w" path="res://Sprite/wall.png" id="9_r3la1"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a3cc2"]

@@ -46,6 +46,7 @@ scale = Vector2(10.5315, -20.9123)
 shape = SubResource("CircleShape2D_nflon")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(14.26, 6.24209)
 scale = Vector2(3.36993, 3.42431)
 sprite_frames = SubResource("SpriteFrames_yhqmk")
 animation = &"walk"
