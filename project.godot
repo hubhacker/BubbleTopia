@@ -11,7 +11,6 @@ config_version=5
 [application]
 
 config/name="GDTest1"
-run/main_scene="res://label.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -92,7 +91,3 @@ dialogic_default_action={
 [internationalization]
 
 locale/translations_pot_files=PackedStringArray("res://Dialogue/main.dialogue", "res://main.dialogue")
-
-[layer_names]
-
-2d_physics/layer_5="Actionables"
