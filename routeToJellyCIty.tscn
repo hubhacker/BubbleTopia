@@ -1,6 +1,7 @@
-[gd_scene load_steps=34 format=3 uid="uid://bukicxqddwpic"]
+[gd_scene load_steps=36 format=3 uid="uid://bukicxqddwpic"]
 
 [ext_resource type="Texture2D" uid="uid://mx5lyx3fu0in" path="res://game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-1.png" id="1_eaypg"]
+[ext_resource type="Shader" path="res://routeToJellyCIty.gdshader" id="1_fvdf5"]
 [ext_resource type="Texture2D" uid="uid://dk1ehbg3f8tld" path="res://game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-4.png" id="2_ggeuf"]
 [ext_resource type="Texture2D" uid="uid://d3j4u6iknv4e" path="res://game-assets-rapidpunches-FEB2021/tiles-whole/tiles-sand-med.png" id="3_wdj61"]
 [ext_resource type="Texture2D" uid="uid://3fcstjtgwppp" path="res://assets/new_undersea_tiles__by_kyle_dove_d4ytzaj.png" id="5_as6vk"]
@@ -18,6 +19,9 @@
 [ext_resource type="Texture2D" uid="uid://vc48pg7ntpak" path="res://Sprite/jellyfish2.png" id="14_7oiff"]
 [ext_resource type="PackedScene" path="res://addons/actionable.tscn" id="17_osiif"]
 [ext_resource type="PackedScene" uid="uid://c7qbqutcjapki" path="res://character_crab.tscn" id="18_jsen1"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u6dcw"]
+shader = ExtResource("1_fvdf5")
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_cdy6u"]
 tile_data = PackedInt32Array(0, 2097166, 4, 65536, 2097166, 5, 131072, 2097166, 6, 196608, 2097166, 4, 262144, 2097166, 5, 327680, 2097166, 6, 1, 2097166, 4, 65537, 2097166, 5, 131073, 2097166, 6, 196609, 2031630, 4, 262145, 2031630, 5, 327681, 2031630, 6, 2, 2031630, 4, 65538, 2031630, 5, 131074, 2031630, 6, 196610, 2097166, 4, 262146, 2097166, 5, 327682, 2097166, 6, 3, 2097166, 4, 65539, 2097166, 5, 131075, 2097166, 6, 196611, 2031630, 4, 262147, 2031630, 5, 327683, 2031630, 6)
@@ -1737,6 +1741,7 @@ height = 148.0
 radius = 30.0167
 
 [node name="RouteToJellyCIty" type="Node2D"]
+material = SubResource("ShaderMaterial_u6dcw")
 position = Vector2(144, 0)
 
 [node name="routeToJellyCity" type="TileMap" parent="."]
