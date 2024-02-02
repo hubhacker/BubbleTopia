@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://bukicxqddwpic"]
+[gd_scene load_steps=39 format=3 uid="uid://bukicxqddwpic"]
 
 [ext_resource type="Texture2D" uid="uid://mx5lyx3fu0in" path="res://game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-1.png" id="1_eaypg"]
 [ext_resource type="Shader" path="res://routeToJellyCIty.gdshader" id="1_fvdf5"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://c4vgnwksnlope"]
+[gd_scene load_steps=31 format=3 uid="uid://c4vgnwksnlope"]
 
 [ext_resource type="Texture2D" uid="uid://mx5lyx3fu0in" path="res://game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-1.png" id="1_eaypg"]
 [ext_resource type="Texture2D" uid="uid://dk1ehbg3f8tld" path="res://game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-4.png" id="2_ggeuf"]
@@ -33,9 +33,13 @@ texture = ExtResource("3_wdj61")
 texture_region_size = Vector2i(24, 16)
 0:0/0 = 0
 
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_5n7oi"]
+polygon = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r8bjs"]
 texture = ExtResource("5_id6o4")
 1:0/0 = 0
+1:0/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_5n7oi")
 2:0/0 = 0
 3:0/0 = 0
 4:0/0 = 0
@@ -43,11 +47,13 @@ texture = ExtResource("5_id6o4")
 6:0/0 = 0
 7:0/0 = 0
 8:0/0 = 0
+8:0/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_5n7oi")
 10:0/0 = 0
 11:0/0 = 0
 12:0/0 = 0
 13:0/0 = 0
 1:1/0 = 0
+1:1/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_5n7oi")
 2:1/0 = 0
 3:1/0 = 0
 4:1/0 = 0
@@ -55,12 +61,14 @@ texture = ExtResource("5_id6o4")
 6:1/0 = 0
 7:1/0 = 0
 8:1/0 = 0
+8:1/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_5n7oi")
 10:1/0 = 0
 11:1/0 = 0
 12:1/0 = 0
 13:1/0 = 0
 14:1/0 = 0
 1:2/0 = 0
+1:2/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_5n7oi")
 2:2/0 = 0
 3:2/0 = 0
 4:2/0 = 0
@@ -68,6 +76,7 @@ texture = ExtResource("5_id6o4")
 6:2/0 = 0
 7:2/0 = 0
 8:2/0 = 0
+8:2/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_5n7oi")
 10:2/0 = 0
 11:2/0 = 0
 12:2/0 = 0
@@ -75,11 +84,13 @@ texture = ExtResource("5_id6o4")
 14:2/0 = 0
 15:2/0 = 0
 2:3/0 = 0
+2:3/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_5n7oi")
 3:3/0 = 0
 4:3/0 = 0
 5:3/0 = 0
 6:3/0 = 0
 7:3/0 = 0
+7:3/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_5n7oi")
 10:3/0 = 0
 11:3/0 = 0
 12:3/0 = 0
@@ -87,9 +98,13 @@ texture = ExtResource("5_id6o4")
 14:3/0 = 0
 15:3/0 = 0
 3:4/0 = 0
+3:4/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_5n7oi")
 4:4/0 = 0
+4:4/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_5n7oi")
 5:4/0 = 0
+5:4/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_5n7oi")
 6:4/0 = 0
+6:4/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_5n7oi")
 12:4/0 = 0
 15:4/0 = 0
 0:5/0 = 0
@@ -1666,6 +1681,8 @@ texture = ExtResource("6_2j4yr")
 texture = ExtResource("9_8dg0g")
 
 [sub_resource type="TileSet" id="TileSet_88gd3"]
+uv_clipping = true
+occlusion_layer_0/light_mask = 1
 sources/0 = SubResource("TileSetAtlasSource_i1kis")
 sources/1 = SubResource("TileSetAtlasSource_j04f8")
 sources/2 = SubResource("TileSetAtlasSource_4l8a3")
@@ -1785,3 +1802,15 @@ shape = SubResource("CapsuleShape2D_sc8fu")
 
 [node name="Timer" type="Timer" parent="jelly"]
 autostart = true
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+rotation = -0.349066
+color = Color(0.0509804, 0.0156863, 0, 1)
+energy = 1.82
+shadow_enabled = true
+shadow_color = Color(0.14902, 0.168627, 0.2, 1)
+shadow_filter = 2
+shadow_filter_smooth = 13.3
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.0196078, 0.576471, 0.996078, 1)
