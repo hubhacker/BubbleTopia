@@ -13,6 +13,7 @@ func handleInput():
 	velocity = moveDirection*speed
 	if Input.is_action_just_pressed("ui_accept"):
 		var actionables = actionable_finder.get_overlapping_areas()
+		DialogueManager.show_example_dialogue_balloon(load("res://main.dialogue"), "scene1")
 		if actionables.size() > 0:
 			actionables[0].action()
 			return

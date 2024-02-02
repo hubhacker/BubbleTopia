@@ -1,18 +1,23 @@
 ~ scene1
 
-???: HELP! [wait=0.4]HELLLP!!! [wait=0.5][speed=0.5]HEEEEEEEEEEEEELLLLLLLLLLLPPPP!
-- (Ignore) => END
-- Are you ok!?
-	???: No!!! I was just swimming, until I got stuck in this huge net!
-	True or False? : You are more likely to get bitten by a shark than struck by lightning.
-	- True => END
-	- False => another_node
-	=> END  
-
-~ another_node
-
-Cici: Thank you so much! My name is Cici!
-=> END
+if global.given_jelly_item == false
+	???: HELP! [wait=0.4]HELLLP!!! [wait=0.5][speed=0.5]HEEEEEEEEEEEEELLLLLLLLLLLPPPP!
+	- Are you ok!?
+		???: No!!! I was just swimming, until my tentacles got all wrapped up in seaweed!
+		- How can I help?
+			???: Try finding something sharp that can cut through all this seaweed
+			- Here you go!
+				if global.found_jelly_item == true:
+					???: That's perfect!
+					global.given_jelly_item == true
+					=> END
+			- Hmm, let me look! => END
+	- (Ignore) => END
+else: 
+	Cici: Thank you so much, brave hero! What's your name?
+	- Scuba, what's yours?
+		Cici: My name is Cici, I can't thank you enough for helping me!!!!
+		=> END
 
 
 
