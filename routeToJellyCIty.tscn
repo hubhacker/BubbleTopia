@@ -384,6 +384,7 @@ texture = ExtResource("5_id6o4")
 12:28/0 = 0
 13:28/0 = 0
 14:28/0 = 0
+7:4/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qih1h"]
 texture = ExtResource("5_as6vk")
@@ -1840,3 +1841,15 @@ scale = Vector2(1.21875, 1)
 position = Vector2(296.205, -115)
 rotation = 2.68251
 scale = Vector2(0.973915, 1.00542)
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+rotation = -0.349066
+color = Color(0.0509804, 0.0156863, 0, 1)
+energy = 1.82
+shadow_enabled = true
+shadow_color = Color(0.14902, 0.168627, 0.2, 1)
+shadow_filter = 2
+shadow_filter_smooth = 13.3
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.0196078, 0.576471, 0.996078, 1)
