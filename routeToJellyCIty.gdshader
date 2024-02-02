@@ -1,11 +1,11 @@
-shader_type canvas_item;
+shader_type spatial;
 
 void vertex() {
 	// Called for every vertex the material is visible on.
 }
 
 void fragment(){
-	COLOR = vec4(1.0,1.0,1.0,1.0);
+	vec4 input_color = tecture(TEXTURE, UV)
 }
 
 //void light() {
