@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://baqgrotv4mbwa" path="res://Sprite/jellyfish1e.png" id="12_71p6u"]
 [ext_resource type="Texture2D" uid="uid://cwq47w0288rsh" path="res://Sprite/jellyfish3.png" id="13_db4qt"]
 [ext_resource type="Texture2D" uid="uid://vc48pg7ntpak" path="res://Sprite/jellyfish2.png" id="14_7oiff"]
-[ext_resource type="PackedScene" path="res://addons/actionable.tscn" id="17_osiif"]
+[ext_resource type="PackedScene" uid="uid://bm0u6ce3b3x4i" path="res://addons/actionable.tscn" id="17_osiif"]
 [ext_resource type="PackedScene" uid="uid://c7qbqutcjapki" path="res://character_crab.tscn" id="18_jsen1"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_u6dcw"]
