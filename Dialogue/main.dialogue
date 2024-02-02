@@ -6,17 +6,26 @@ if global.given_jelly_item == false
 		???: No!!! I was just swimming, until my tentacles got all wrapped up in seaweed!
 		- How can I help?
 			???: Try finding something sharp that can cut through all this seaweed
-			- Here you go!
+			- Would this work?
+				if global.found_jelly_item == false:
+					???: You don't have anything[wait=0.6][speed=0.2]....? [speed=1]Please keep looking!
 				if global.found_jelly_item == true:
-					???: That's perfect!
-					global.given_jelly_item == true
+					???: That's perfect! 
+					- (Hand her the seashell)
+					set global.given_jelly_item = true
 					=> END
 			- Hmm, let me look! => END
 	- (Ignore) => END
 else: 
-	Cici: Thank you so much, brave hero! What's your name?
+	???: Thank you so much, brave traveller! What's your name?
 	- Scuba, what's yours?
-		Cici: My name is Cici, I can't thank you enough for helping me!!!!
+		Cici: My name is Cici, [wait=0.6]I can't thank you enough for helping me!!!![wait=1] Where are you going?
+		- I'm on my way to Jelly City[speed=0.2]... [speed=0.6]I'm a little lost.
+			Cici: Oh! Jelly City! I'm very familiar. 
+			Cici: There's two forks in the road, [wait=1]just remember to take a right,[wait=1] and then a left!
+			- Thank you so much![wait=0.6] I should get going now.
+				Cici: Alrighty, [wait=0.7]see you around!!
+				- See you around!
 		=> END
 
 
