@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://c4vgnwksnlope"]
+[gd_scene load_steps=34 format=3 uid="uid://c4vgnwksnlope"]
 
 [ext_resource type="Texture2D" uid="uid://mx5lyx3fu0in" path="res://game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-1.png" id="1_eaypg"]
 [ext_resource type="Texture2D" uid="uid://dk1ehbg3f8tld" path="res://game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-4.png" id="2_ggeuf"]
@@ -16,7 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://baqgrotv4mbwa" path="res://Sprite/jellyfish1e.png" id="12_71p6u"]
 [ext_resource type="Texture2D" uid="uid://cwq47w0288rsh" path="res://Sprite/jellyfish3.png" id="13_db4qt"]
 [ext_resource type="Texture2D" uid="uid://vc48pg7ntpak" path="res://Sprite/jellyfish2.png" id="14_7oiff"]
-[ext_resource type="Script" path="res://helper/actionable.gd" id="17_c2r7l"]
+[ext_resource type="PackedScene" uid="uid://bm0u6ce3b3x4i" path="res://addons/actionable.tscn" id="17_dx666"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_cdy6u"]
 tile_data = PackedInt32Array(0, 2097166, 4, 65536, 2097166, 5, 131072, 2097166, 6, 196608, 2097166, 4, 262144, 2097166, 5, 327680, 2097166, 6, 1, 2097166, 4, 65537, 2097166, 5, 131073, 2097166, 6, 196609, 2031630, 4, 262145, 2031630, 5, 327681, 2031630, 6, 2, 2031630, 4, 65538, 2031630, 5, 131074, 2031630, 6, 196610, 2097166, 4, 262146, 2097166, 5, 327682, 2097166, 6, 3, 2097166, 4, 65539, 2097166, 5, 131075, 2097166, 6, 196611, 2031630, 4, 262147, 2031630, 5, 327683, 2031630, 6)
@@ -1716,6 +1716,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_1g087"]
+radius = 25.0
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_ackl1"]
 animations = [{
 "frames": [{
@@ -1742,9 +1745,12 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4w3os"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sc8fu"]
+radius = 15.0
+height = 34.0
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_1sj7s"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_i4yyx"]
+radius = 29.2746
 
 [node name="RouteToJellyCIty" type="Node2D"]
 position = Vector2(144, 0)
@@ -1789,7 +1795,20 @@ position = Vector2(242.5, 756.25)
 scale = Vector2(0.345, 0.3225)
 sprite_frames = SubResource("SpriteFrames_4q5di")
 
+[node name="Direction" type="Marker2D" parent="CharacterBody2D"]
+
+[node name="ActionableFinder" type="Area2D" parent="CharacterBody2D/Direction"]
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Direction/ActionableFinder"]
+position = Vector2(237, 739)
+shape = SubResource("CircleShape2D_1g087")
+debug_color = Color(0.498039, 0.0156863, 0.152941, 0.419608)
+metadata/_edit_group_ = true
+
 [node name="jelly" type="CharacterBody2D" parent="."]
+position = Vector2(13, 21)
 script = ExtResource("10_saba2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="jelly"]
@@ -1808,14 +1827,15 @@ debug_color = Color(0.8, 0.419608, 0.0901961, 0.419608)
 [node name="Timer" type="Timer" parent="jelly"]
 autostart = true
 
-[node name="Actionable" type="Area2D" parent="jelly"]
-script = ExtResource("17_c2r7l")
+[node name="Actionable" parent="jelly" instance=ExtResource("17_dx666")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="jelly/Actionable"]
-position = Vector2(256, 149)
-shape = SubResource("CircleShape2D_1sj7s")
+position = Vector2(151, 131)
+shape = SubResource("CircleShape2D_i4yyx")
+debug_color = Color(1, 0.984314, 0.992157, 0.419608)
 
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+position = Vector2(-40, 7)
 rotation = -0.349066
 color = Color(0.0509804, 0.0156863, 0, 1)
 energy = 1.82
@@ -1825,4 +1845,5 @@ shadow_filter = 2
 shadow_filter_smooth = 13.3
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+position = Vector2(-29, -2)
 color = Color(0.0196078, 0.576471, 0.996078, 1)
