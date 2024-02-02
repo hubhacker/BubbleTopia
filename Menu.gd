@@ -5,7 +5,7 @@ extends Control
 
 @onready var play_button = $MarginContainer/HBoxContainer/VBoxContainer/Play as Button
 @onready var exit_button = $MarginContainer/HBoxContainer/VBoxContainer/Quit as Button
-@export var start_level = preload("res://routeToJellyCIty (2).tscn") as PackedScene
+@export var start_level = preload("res://routeToJellyCIty.tscn") as PackedScene
 
 
 func _ready():
