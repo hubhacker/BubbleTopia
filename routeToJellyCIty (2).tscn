@@ -1790,9 +1790,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_1g087"]
-radius = 25.0
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_ackl1"]
 animations = [{
 "frames": [{
@@ -1820,11 +1817,6 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sc8fu"]
-radius = 15.0
-height = 34.0
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_i4yyx"]
-radius = 29.2746
 
 [node name="RouteToJellyCIty" type="Node2D"]
 position = Vector2(144, 0)
@@ -1882,7 +1874,6 @@ debug_color = Color(0.498039, 0.0156863, 0.152941, 0.419608)
 metadata/_edit_group_ = true
 
 [node name="jelly" type="CharacterBody2D" parent="."]
-position = Vector2(13, 21)
 script = ExtResource("10_saba2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="jelly"]
@@ -1894,22 +1885,12 @@ frame_progress = 0.597431
 speed_scale = 1.3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="jelly"]
-position = Vector2(206, 143)
 shape = SubResource("CapsuleShape2D_sc8fu")
-debug_color = Color(0.223529, 0.0588235, 0.0392157, 0.419608)
 
 [node name="Timer" type="Timer" parent="jelly"]
 autostart = true
 
-[node name="Actionable" parent="jelly" instance=ExtResource("17_dx666")]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="jelly/Actionable"]
-position = Vector2(151, 131)
-shape = SubResource("CircleShape2D_i4yyx")
-debug_color = Color(1, 0.984314, 0.992157, 0.419608)
-
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
-position = Vector2(-40, 7)
 rotation = -0.349066
 color = Color(0.0509804, 0.0156863, 0, 1)
 energy = 1.82
@@ -1919,5 +1900,4 @@ shadow_filter = 2
 shadow_filter_smooth = 13.3
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-position = Vector2(-29, -2)
 color = Color(0.0196078, 0.576471, 0.996078, 1)

@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://dcnh80sptt71n"]
+
+[ext_resource type="PackedScene" uid="uid://bm0u6ce3b3x4i" path="res://addons/actionable.tscn" id="1_l1xks"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_alfd7"]
+radius = 25.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_88f2g"]
+radius = 33.6155
+
+[node name="Node2D" type="Node2D"]
+
+[node name="for scuba" type="Marker2D" parent="."]
+
+[node name="ActionableFinder" type="Area2D" parent="for scuba"]
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="for scuba/ActionableFinder"]
+position = Vector2(237, 739)
+shape = SubResource("CircleShape2D_alfd7")
+debug_color = Color(0.498039, 0.0156863, 0.152941, 0.419608)
+metadata/_edit_group_ = true
+
+[node name="for jelly" parent="." instance=ExtResource("1_l1xks")]
+position = Vector2(222, 179)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="for jelly"]
+position = Vector2(-15, -36)
+shape = SubResource("CircleShape2D_88f2g")
