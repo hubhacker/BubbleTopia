@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://b0l7ov5nlyeds"
+path="res://.godot/imported/pickup.dialogue-01517ff2b4c63548f8d81ef234f0d73f.tres"
+
+[deps]
+
+source_file="res://pickup.dialogue"
+dest_files=["res://.godot/imported/pickup.dialogue-01517ff2b4c63548f8d81ef234f0d73f.tres"]
+
+[params]
+
+defaults=true

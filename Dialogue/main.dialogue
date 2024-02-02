@@ -7,9 +7,11 @@ if global.given_jelly_item == false
 		- How can I help?
 			???: Try finding something sharp that can cut through all this seaweed
 			- Here you go!
+				if global.found_jelly_item == false:
+					???: You don't have anything[wait=0.6][speed=0.2].... [speed=1]please keep looking!
 				if global.found_jelly_item == true:
 					???: That's perfect!
-					global.given_jelly_item == true
+					set global.given_jelly_item = true
 					=> END
 			- Hmm, let me look! => END
 	- (Ignore) => END

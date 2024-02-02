@@ -1,0 +1,9 @@
+~ pickup
+SYSTEM: This is a seashell. Pick it up?
+- Yes
+	SYSTEM: You picked up the seashell. 
+	set global.found_jelly_item = true
+	
+	=> END
+- No 
+=> END
