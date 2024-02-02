@@ -21,7 +21,6 @@
 [ext_resource type="PackedScene" uid="uid://c7qbqutcjapki" path="res://character_crab.tscn" id="18_jsen1"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_u6dcw"]
-render_priority = 0
 shader = ExtResource("1_fvdf5")
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_cdy6u"]
