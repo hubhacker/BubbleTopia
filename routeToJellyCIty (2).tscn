@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://c4vgnwksnlope"]
+[gd_scene load_steps=38 format=3 uid="uid://c4vgnwksnlope"]
 
 [ext_resource type="Texture2D" uid="uid://mx5lyx3fu0in" path="res://game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-1.png" id="1_eaypg"]
 [ext_resource type="Texture2D" uid="uid://dk1ehbg3f8tld" path="res://game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-4.png" id="2_ggeuf"]
@@ -17,7 +17,6 @@
 [ext_resource type="Texture2D" uid="uid://cwq47w0288rsh" path="res://Sprite/jellyfish3.png" id="13_db4qt"]
 [ext_resource type="Texture2D" uid="uid://vc48pg7ntpak" path="res://Sprite/jellyfish2.png" id="14_7oiff"]
 [ext_resource type="PackedScene" uid="uid://dadbuh138ge3s" path="res://addons/actionable.tscn" id="17_l8ov8"]
-[ext_resource type="Script" path="res://seashell.gd" id="18_k2oav"]
 [ext_resource type="Texture2D" uid="uid://cijgj7smo3ax" path="res://Sprite/seashell.png" id="19_6r2p5"]
 [ext_resource type="Script" path="res://addons/actionable2.gd" id="19_k0si8"]
 [ext_resource type="Resource" uid="uid://b0l7ov5nlyeds" path="res://pickup.dialogue" id="20_6wxqg"]
@@ -1857,7 +1856,6 @@ color = Color(0.0196078, 0.576471, 0.996078, 1)
 position = Vector2(500, 695)
 scale = Vector2(0.0284178, 0.0300752)
 texture = ExtResource("19_6r2p5")
-script = ExtResource("18_k2oav")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="seashell"]
 position = Vector2(501, 697)
