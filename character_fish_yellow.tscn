@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bax57m7m5ijsy"]
+
+[ext_resource type="Texture2D" uid="uid://cfuxcyc5haneh" path="res://game-assets-rapidpunches-FEB2021/png-sprites/sheets/8bit-fish-basic.png" id="1_6gpex"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_6gpex")
+hframes = 2
+vframes = 4

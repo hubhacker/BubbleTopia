@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cbshs31p8spt2"]
+[gd_scene load_steps=7 format=3 uid="uid://ctswla324rucq"]
 
 [ext_resource type="Script" path="res://Menu.gd" id="1_4ni2t"]
 [ext_resource type="Texture2D" uid="uid://tqugjp7hqnga" path="res://assets/beachPixel.jpg" id="2_ii78t"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cm0jdel4a4ofv"]
+[gd_scene load_steps=16 format=3 uid="uid://cd1d8ykvwr3qv"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_7kh7x"]
 [ext_resource type="Texture2D" uid="uid://cchwhq3xhcyrd" path="res://Sprite/scuba3.png" id="2_xdr55"]
