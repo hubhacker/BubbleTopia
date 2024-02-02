@@ -6,11 +6,12 @@ if global.given_jelly_item == false
 		???: No!!! I was just swimming, until my tentacles got all wrapped up in seaweed!
 		- How can I help?
 			???: Try finding something sharp that can cut through all this seaweed
-			- Here you go!
+			- Would this work?
 				if global.found_jelly_item == false:
-					???: You don't have anything[wait=0.6][speed=0.2].... [speed=1]please keep looking!
+					???: You don't have anything[wait=0.6][speed=0.2]....? [speed=1]Please keep looking!
 				if global.found_jelly_item == true:
 					???: That's perfect! 
+					- (Hand her the seashell)
 					set global.given_jelly_item = true
 					=> END
 			- Hmm, let me look! => END
