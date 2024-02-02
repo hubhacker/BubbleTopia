@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bt4bkpqmek3ea"
-path="res://.godot/imported/Untitled_Artwork.png-abf834c8d878a91cc31239853bd8ec74.ctex"
+path="res://.godot/imported/newScuba.png-ff31119dadb621b87ae351c649430d80.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Untitled_Artwork.png"
-dest_files=["res://.godot/imported/Untitled_Artwork.png-abf834c8d878a91cc31239853bd8ec74.ctex"]
+source_file="res://newScuba.png"
+dest_files=["res://.godot/imported/newScuba.png-ff31119dadb621b87ae351c649430d80.ctex"]
 
 [params]
 
