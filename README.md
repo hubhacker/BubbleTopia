@@ -1,4 +1,5 @@
 **What is Bubbletopia?**
+
 Bubbletopia is a story RPG where the user navigates their way under the sea, while completing educational challenges.
 
 **Story Summary**
